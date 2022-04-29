@@ -20,6 +20,9 @@ function Header() {
           <a href="#">Tesla Account</a>
           <MenuIcon />
         </RigthMenu>
+        <BurgerMenu>
+
+        </BurgerMenu>
     </Container>
   )
 }
@@ -65,4 +68,8 @@ const RigthMenu = styled.div`
 
 const CustomMenu = styled(MenuIcon)`
   cursor: pointer;
+`
+
+const BurgerMenu = styled.div`
+  
 `
