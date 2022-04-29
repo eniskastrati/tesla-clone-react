@@ -15,7 +15,8 @@ export default Seciton
 const Wrap = styled.div`
     width: 100vw;
     height: 100vh;
-    background: orange;
-    backgroud-image: 
-
+    background-size: cover;
+    background-position: center;
+    background-image: url('/images/model-s.jpg'); 
+    background-repear: no-repeat;
 `
