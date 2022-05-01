@@ -4,8 +4,12 @@ import styled from 'styled-components'
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close'
 
+import { selectCars } from '../features/car/carSlice';
+import { useSelector } from 'react-redux';
+
 function Header() {
   const [burgerStatus, setBurgerStatus] = useState(false);
+  // const cars = useSelector(selectCars);
   return (
     <Container>
       <a>
@@ -98,7 +102,7 @@ const BurgerMenu = styled.div`
   flex-direction: column;
   text-align: start;
   transform: ${props => props.show ? 'translateX(0)' : 'translateX(100%)'};
-  TRANSITION: TRANSFORM 0.2S ease-in-out;
+  transition: transform 0.2S ease-in;
   li{
     padding: 15px 0;
     border-bottom: 1px solid rgba(0,0,0, .2);
