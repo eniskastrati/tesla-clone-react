@@ -13,7 +13,7 @@ function Header() {
   return (
     <Container>
       <a>
-        <img src="/images/logo.svg" />
+        <img src="/images/logo.svg" alt='TESLA' />
       </a>
       <Menu>
         <a href='#'>Model S</a>
